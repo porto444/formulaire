@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F5F5"> <!-- Fond légèrement gris -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Titre général -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulaire d'inscription"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="#333333"/>
+
+        <!-- Champ Nom -->
+        <TextView android:text="Nom &amp; Prénom" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex:  Ahmed"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Champ Email -->
+        <TextView android:text="Email" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="exemple@email.com"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Champ Phone -->
+        <TextView android:text="Téléphone" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+212 6..."
+            android:inputType="phone"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Champ Adresse -->
+        <TextView android:text="Adresse" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre adresse..."
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Champ Ville -->
+        <TextView android:text="Ville" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Casablanca, Rabat..."
+            android:inputType="textCapWords"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Bouton -->
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
